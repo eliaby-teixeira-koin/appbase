@@ -2,8 +2,8 @@ import { navigateToUrl } from 'single-spa'
 
 export default function Root(props) {
   return (
-    <section className="container-fluid d-flex justify-content-center bg-light bg-light border-bottom">
-      <nav className="navbar navbar-expand-lg navbar-light">
+    <section className="container-fluid d-flex justify-content-center border-bottom">
+      <nav className="container navbar navbar-expand navbar-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Poc MFE</a>
           <button className="navbar-toggler"
@@ -19,12 +19,6 @@ export default function Root(props) {
               </li>
               <li className="nav-item">
                 <button type="button" className="btn btn-sm btn-link" onClick={() => navigateToUrl('/app1')}>App 1</button>
-              </li>
-              <li className="nav-item">
-                <button type="button" className="btn btn-sm btn-link" onClick={() => navigateToUrl('/app2')}>App 2</button>
-              </li>
-              <li className="nav-item">
-                <button type="button" className="btn btn-sm btn-link" onClick={() => navigateToUrl('/app3')}>App 3</button>
               </li>
             </ul>
           </div>
